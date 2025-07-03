@@ -112,6 +112,14 @@ main {
 
 /* skills/ my stack section */
 
+.skills-section {
+
+}
+
+.my-stack-txt {
+    
+}
+
 .stack-card {
     display: flex;
 }
@@ -223,5 +231,5 @@ main {
 }
 
 .copyright-details {
-    
+
 }
