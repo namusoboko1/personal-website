@@ -1,0 +1,227 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-bar {
+    /* background-color: lightblue; */
+    font-family: Arial;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(230, 227, 227);
+
+
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+p {
+    margin: 0;
+}
+
+
+/* hero section */
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+
+.section-navigations {
+
+}
+
+.contact {
+    margin-left: 50px;
+}
+
+
+/* projects section */
+
+main {
+    background-color: beige;
+    height: 100%;
+}
+
+.projects-section {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 16px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: blue;
+    
+}
+
+.meme-card {
+    background-image: url(/assets/icons/bitcoin.png);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+
+.project-info {
+    background-color: rgba(255, 255, 255, 0.274);
+    color: black;
+    backdrop-filter:blur(2rem);
+    padding:1rem
+}
+
+
+
+/* skills/ my stack section */
+
+.stack-card {
+    display: flex;
+}
+
+.backend-stack {
+    
+}
+
+.front-end-stack {
+
+}
+
+.tools-used {
+
+}
+
+.set-txt {
+
+}
+
+.tool-icon-coontainer {
+
+}
+
+.set-icon {
+
+} 
+
+
+/* about-me section */
+
+.my-credentials {
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+
+.about-me-txt {
+
+}
+
+.info-about-me {
+    display: flex;
+}
+
+.my-image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.career-info {
+    
+}
+ .current-progress-txt {
+
+ }
+
+.working-experience-txt {
+
+}
+
+.downlaod-cv-btn {
+
+}
+
+/* footer section */
+
+.footer-section {
+
+}
+
+.socials-en-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-info-about-me-txt {
+
+}
+
+.email-input {
+
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+.links-section{
+
+}
+
+.links-heading {
+
+}
+
+.links {
+
+}
+
+.link-txt {
+
+}
+
+.copyright-details {
+    
+}
