@@ -74,6 +74,10 @@ main {
     height: 500px;
 }
 
+.my-projects {
+    text-align: center;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,7 +94,7 @@ main {
 }
 
 .meme-card {
-    background-image: url(/assets/icons/bitcoin.png);
+    background-image: url(/assets/images/memeOracle1.jpg);
     height: 200px;
     background-position: center;
     background-size: cover;
@@ -99,12 +103,68 @@ main {
     align-items: last baseline;
 }
 
+.insightsPro-card {
+    background-image: url(/assets/images/insightpanel.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.neuro-notes-card {
+    background-image: url(/assets/images/neuralnotes1.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.neuro-notes-card {
+    background-image: url(/assets/images/neuralnotes1.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.task-forge-card {
+    background-image: url(/assets/images/taskForge.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
 
 .project-info {
     background-color: rgba(255, 255, 255, 0.274);
     color: black;
-    backdrop-filter:blur(2rem);
-    padding:1rem
+    backdrop-filter:blur(1rem);
+    padding:10px;
+    border-radius: 10px;
+    flex: 1;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project-name, .project-description {
+    color: white;
+}
+
+.project-name {
+    margin: 0;
+}
+
+.project-description {
+
 }
 
 
@@ -171,6 +231,7 @@ main {
     background-color: cadetblue;
     height: 300px;
     justify-content: center;
+    padding-bottom: 20px;
 
 }
 
@@ -214,6 +275,15 @@ main {
     background-color: lightblue;
     border: none;
     border-radius: 20px;
+    width: 160px;
+    padding-right: 50px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    margin-left: -38px;
 }
 
 /* footer section */
@@ -228,27 +298,46 @@ main {
     justify-content: space-between;
 }
 
-.social-links {
+
+.social-connection {
     display: flex;
     flex-direction: column;
 
 }
 
 .get-info-about-me-txt {
-    
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .email-input {
+    outline: none;
+    height: 36px;
+    flex: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.5px solid grey;
+    padding-bottom: 1px;
+    padding-left: 0;
+}
 
+.email-input::placeholder {
+    font-size: 20px;
 }
 
 .social-media-icons {
     display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .set-social-icons {
     width: 50px;
     height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .links-section{
@@ -260,13 +349,16 @@ main {
 }
 
 .links {
-
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .link-txt {
-
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .copyright-details {
-
+    text-align: center;
 }
