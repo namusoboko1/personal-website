@@ -31,9 +31,6 @@ body {
     color: white;
 }
 
-p {
-    margin: 0;
-}
 
 
 /* hero section */
@@ -62,17 +59,19 @@ li a {
 }
 
 
-/* projects section */
+
 
 main {
     background-color: beige;
     height: 100%;
 }
 
+/* projects section */
 .projects-section {
     background-color: lightpink;
     display: flex;
     flex-direction: column;
+    height: 500px;
 }
 
 .projects {
@@ -113,15 +112,18 @@ main {
 /* skills/ my stack section */
 
 .skills-section {
-
+    display: flex;
+    flex-direction: column;
+    height: 300px;
 }
 
-.my-stack-txt {
-
+.my-stack-txt, .set-txt {
+    text-align: center;
 }
 
 .stack-card {
     display: flex;
+    column-gap: 50px;
 }
 
 .backend-stack {
@@ -129,7 +131,7 @@ main {
 }
 
 .front-end-stack {
-
+    
 }
 
 .tools-used {
@@ -143,6 +145,7 @@ main {
 .tool-icon-coontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
 .single-tool-container {
@@ -150,11 +153,13 @@ main {
 }
 
 .set-icon {
-
+    width: 50px;
+    height: 50px;
+    fill: darkblue;
 } 
 
 .set-tool-txt {
-    
+
 }
 
 
@@ -164,27 +169,41 @@ main {
     display: flex;
     flex-direction: column;
     background-color: cadetblue;
+    height: 300px;
+    justify-content: center;
+
 }
 
 .about-me-txt {
-
+    text-align: center;
 }
 
 .info-about-me {
     display: flex;
+
 }
 
 .my-image {
-    height: 50px;
-    width: 50px;
-    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    object-fit: cover;   
+    margin-right: 30px; 
 }
 
 .career-info {
-    
-}
- .current-progress-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+
+.surname-txt {
+
+}
+
+ .current-progress-txt {
+    line-height: 30px;
  }
 
 .working-experience-txt {
@@ -192,27 +211,31 @@ main {
 }
 
 .downlaod-cv-btn {
-
+    background-color: lightblue;
+    border: none;
+    border-radius: 20px;
 }
 
 /* footer section */
 
 .footer-section {
-
+    height: 400px;
 }
 
 .socials-en-links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .social-links {
     display: flex;
     flex-direction: column;
+
 }
 
 .get-info-about-me-txt {
-
+    
 }
 
 .email-input {
@@ -221,6 +244,11 @@ main {
 
 .social-media-icons {
     display: flex;
+}
+
+.set-social-icons {
+    width: 50px;
+    height: 50px;
 }
 
 .links-section{
