@@ -33,7 +33,7 @@ body {
 
 
 
-/* hero section */
+
 ul {
     display: flex;
 }
@@ -50,10 +50,6 @@ li a {
 }
 
 
-.section-navigations {
-
-}
-
 .contact {
     margin-left: 50px;
 }
@@ -62,13 +58,53 @@ li a {
 
 
 main {
-    background-color: beige;
     height: 100%;
 }
 
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.role-container {
+
+}
+
+.owner-txt {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.role-txt {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hire-btn {
+    background-color: lightblue;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
 /* projects section */
 .projects-section {
-    background-color: lightpink;
     display: flex;
     flex-direction: column;
     height: 500px;
@@ -88,9 +124,7 @@ main {
 .project-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: blue;
-    
+    justify-content: space-between;   
 }
 
 .meme-card {
@@ -123,16 +157,6 @@ main {
     align-items: last baseline;
 }
 
-.neuro-notes-card {
-    background-image: url(/assets/images/neuralnotes1.jpg);
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: last baseline;
-}
-
 .task-forge-card {
     background-image: url(/assets/images/taskForge.jpg);
     height: 200px;
@@ -145,7 +169,6 @@ main {
 
 .project-info {
     background-color: rgba(255, 255, 255, 0.274);
-    color: black;
     backdrop-filter:blur(1rem);
     padding:10px;
     border-radius: 10px;
@@ -215,7 +238,6 @@ main {
 .set-icon {
     width: 50px;
     height: 50px;
-    fill: darkblue;
 } 
 
 .set-tool-txt {
@@ -228,9 +250,9 @@ main {
 .my-credentials {
     display: flex;
     flex-direction: column;
-    background-color: cadetblue;
     height: 300px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     padding-bottom: 20px;
 
 }
@@ -241,13 +263,15 @@ main {
 
 .info-about-me {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .my-image {
     height: 200px;
     width: 200px;
-    border-radius: 50px;
+    border-radius: 100px;
     object-fit: cover;   
     margin-right: 30px; 
 }
