@@ -441,52 +441,144 @@ li a:hover {
 
 /* ========== About Me Section ========== */
 .my-credentials {
-  padding: 40px 20px;
+  max-width: 1200px; /* Constrain width for better balance */
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  background-color: #f9fafb;
 }
 
 .about-me-txt {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.about-me-txt::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0077ff;
+  margin: 1rem auto 0;
 }
 
 .info-about-me {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
-  justify-content: center;
+  gap: 4rem;
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 0 auto; /* Center the container */
+  max-width: 1000px; /* Better proportion */
 }
 
 .my-image {
-  width: 200px;
-  height: 200px;
+  width: 280px; /* Increased size */
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 .career-info {
-  max-width: 600px;
+  flex: 1;
+  min-width: 0; /* Allows text to wrap properly */
+}
+
+.surname-txt {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
 }
 
 .current-progress-txt {
-  line-height: 1.6;
-  margin: 15px 0;
+  line-height: 1.7;
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.working-experience-txt {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.download-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .downlaod-cv-btn {
   background-color: #0077ff;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px; /* Slightly less rounded */
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.downlaod-cv-btn:hover {
+  background-color: #0066dd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 119, 255, 0.2);
 }
 
 .arrow-icon {
-  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.downlaod-cv-btn:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .info-about-me {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .my-image {
+    width: 220px;
+    height: 220px;
+  }
+  
+  .career-info {
+    text-align: center;
+  }
+  
+  .download-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-credentials {
+    padding: 3rem 1rem;
+  }
+  
+  .current-progress-txt {
+    font-size: 1rem;
+  }
 }
 
 /* ========== Footer Section ========== */
