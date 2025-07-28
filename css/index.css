@@ -197,20 +197,49 @@ li a:hover {
 
 /* ========== Projects Section ========== */
 .projects-section {
-  padding: 40px 20px;
+  padding: 5rem 5%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
 }
 
 .my-projects {
   text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 24px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+  position: relative;
 }
+
+.my-projects::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0077ff;
+  margin: 1rem auto 0;
+}
+
 
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 2rem;
+}
+
+/* Enhanced Project Cards */
+[class$="-card"] {
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+[class$="-card"]:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .project-card,
@@ -246,14 +275,34 @@ li a:hover {
   width: 100%;
 }
 
+[class$="-card"]:hover .project-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
 .project-name {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: white;
 }
 
 .project-description {
-  font-size: 14px;
-  margin-top: 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  
+  [class$="-card"] {
+    height: 240px;
+  }
 }
 
 /* ========== Skills Section ========== */
