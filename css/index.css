@@ -307,45 +307,136 @@ li a:hover {
 
 /* ========== Skills Section ========== */
 .skills-section {
-  padding: 40px 20px;
+  /* padding: 5rem 5%; */
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .my-stack-txt {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 24px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #1a1a1a;
+  position: relative;
 }
 
+
+.my-stack-txt::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #0077ff;
+  margin: 1rem auto 0;
+}
+
+/* more tweaking */
 .stack-card {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  gap: 40px;
+  /* gap: 20px; */
+  padding: 1.5rem 0; /* Adds breathing room top/bottom */
+  overflow: visible; /* Ensures hover effects aren't clipped */
+  justify-content: space-between;
+}
+
+.back-end-stack,
+.front-end-stack,
+.tools-used {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-end-stack:hover,
+.front-end-stack:hover,
+.tools-used:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); */
 }
 
 .set-txt {
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #2d3748;
   text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.set-txt::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 2px;
+  background: #0077ff;
 }
 
 .tool-icon-container {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .single-tool-container {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.single-tool-container:hover {
+  transform: scale(1.1);
 }
 
 .set-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.75rem;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: all 0.3s ease;
+}
+
+.single-tool-container:hover .set-icon {
+  filter: grayscale(0%);
+}
+
+.set-tool-txt {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stack-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tool-icon-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-icon-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ========== About Me Section ========== */
